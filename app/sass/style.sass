@@ -15,6 +15,22 @@ a:hover
     font-size: 48px
     font-weight: 500
     font-family: $secondary-font
+    span 
+        background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        display: inline
+.h1--light 
+    span
+        background: $linear-dark
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        display: inline 
+
 .h3 
     font-family: $secondary-font
     font-weight: 700
@@ -28,6 +44,9 @@ a:hover
     display: inline-block
     padding: 7.5px 40px
     color: $black
+.button--light 
+    background: $linear-dark
+    color: #fff
 .button:hover 
     color: $black
 //end global style
@@ -293,23 +312,36 @@ a:hover
     width: 60.417vw
 .main-screen
     display: flex
-    justify-content: space-between
-    padding-left: 5.208vw
-    padding-right: 4.427vw
+    justify-content: center
+    padding-left: 2vw
+    padding-right: 2vw
     padding-top: 95px
     .h1 
         max-width: 29.844vw
+        font-size: 2.5vw
+        
 .main-screen__img-wrapper
     position: relative
+    padding-left: 2.083vw
 .main-screen__code
     position: absolute
     bottom: 0
     left: 0
-    transform: translateX(-75%) translateY(7%)
+    transform: translateX(-60%) translateY(8%)
 .main-screen__text
     margin-bottom: 30px
     font-weight: 300
-
+    max-width: 470px
+.main-screen__img
+    width: 18.281vw
+.main-screen__code
+    width: 14.167vw
+.main-screen__bubles
+    position: absolute 
+    top: 100% 
+    right: 0
+    transform: translateY(-50%) translateX(27%)
+    width: 7.240vw
 //end main-content
 
 @import "media"
