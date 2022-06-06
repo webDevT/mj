@@ -1,0 +1,318 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+    font-size: 16px
+    font-family: $main-font
+    font-weight: 400
+a 
+    text-decoration: none
+a:hover 
+    color: inherit
+    text-decoration: none
+.h1 
+    font-size: 48px
+    font-weight: 500
+    font-family: $secondary-font
+.h3 
+    font-family: $secondary-font
+    font-weight: 700
+    font-size: 20px
+    margin-bottom: 0
+.button 
+    font-weight: 500
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    ox-shadow: 5px 4px 15px rgba(157, 85, 201, 0.2)
+    border-radius: 10px
+    display: inline-block
+    padding: 7.5px 40px
+    color: $black
+.button:hover 
+    color: $black
+//end global style
+
+//start global style dark
+.dark 
+    background: $dark-background
+    color: $stroke
+
+//end global style 
+
+//start global style light
+
+//end global style light
+.light
+    background: $liner;
+    color: $black
+//start header style
+
+.header
+    border-bottom: 1px solid #616F86
+.header__container
+    padding-left: 5.521vw
+    width: 100%
+    padding-top: 15px
+    padding-bottom: 15px
+    display: flex
+    justify-content: space-between
+    align-items: center
+.header--light
+    border-color: #E2E2EC
+.search-input
+    width: 209px
+    height: 29px
+    outline: none
+    color: $stroke
+    border: none
+    padding: 0 15px
+    padding-right: 35px
+    font-size: 12px
+    font-weight: 300
+    background: url('../img/icons/loop.svg') no-repeat right 17.25px center, linear-gradient(0deg, rgba(15, 15, 55, 0.5), rgba(15, 15, 55, 0.5)), rgba(215, 223, 235, 0.3)
+    border-radius: 100px
+    text-decoration: none
+.search-input--light
+    background: rgba(215, 223, 235, 0.3)
+    color: $black
+.search-input--light:placeholder
+    color: rgba($stroke, .3)
+.header__left 
+    display: flex
+    align-items: center
+.header__content 
+    width: 20.573vw
+    display: flex
+    align-items: center
+    padding-right: 1vw
+.header__buttons
+    margin-left: 4.219vw
+    font-size: 14px
+    display: flex
+    align-items: center
+.login
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #F8ECFF 45.17%, #DAE7FF 77.86%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    margin-right: 24px
+    white-space: nowrap
+    cursor: pointer
+.sign-up 
+    width: 90px
+    height: 29px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 7.17949px
+    font-weight: 500
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+    cursor: pointer
+.sign-up--light
+    color: #fff
+.login--light
+    color: $grey
+    -webkit-text-fill-color: $grey
+    background-clip: text
+    text-fill-color: $grey
+    
+//end header style
+
+//start switch component
+.switch 
+    width: 62px
+    min-width: 62px
+    height: 30px
+    border-radius: 40px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 4px
+    font-size: 10px
+    font-weight: 500
+.switch__button
+    width: 22px
+    height: 22px
+    border-radius: 50%  
+    background-color: $black
+    background-image: url('../img/icons/lamp.svg')
+    background-position: center
+    background-repeat: no-repeat
+    display: flex
+    justify-content: center
+    align-items: center
+.switch--dark
+    background: linear-gradient(91.58deg, #10427A 4.33%, #9D55C9 63.01%, #0F73B7 125.11%)
+    color: #fff
+.switch--dark:hover 
+    color: #fff
+.switch__text 
+    padding-left: 6px
+.switch--light
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #F8ECFF 45.17%, #DAE7FF 77.86%)
+    .switch__button 
+        background: $blue-gray
+        background-image: url('../img/icons/lamp-light.svg')
+        background-position: center
+        background-repeat: no-repeat
+    .switch__text
+        padding-left: 0
+        padding-right: 6px
+        color: $grey
+
+//end switch component
+
+//start content template
+.content-wrapper
+    display: flex
+    justify-content: space-between
+    
+.left-sidebar--dark
+    background: $gray-additional
+    border-right: 1px solid #616F86
+.left-sidebar
+    width: 19.010vw
+    min-height: 100%
+.right-sidebar
+    width: 20.573vw
+    min-height: 100%
+.right-sidebar--dark
+    background: $gray-additional
+    border-left: 1px solid #616F86
+.left-sidebar--light
+    background: rgba(255, 255, 255, 0.3)
+    border-right: 1px solid #E2E2EC
+.right-sidebar--light 
+    background: rgba(255, 255, 255, 0.3)
+    border-left: 1px solid #E2E2EC
+.right-sidebar,
+.left-sidebar 
+    padding-top: 25px
+    padding-bottom: 30px
+
+.tags-list
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-top: 22.5px
+    .tag 
+        margin-left: 0
+        margin-right: 0
+.left-sidebar
+    display: flex
+    justify-content: center
+.sidebar__title-wrapper
+    text-align: center
+    padding-bottom: 25px
+    border-bottom: 1px solid $grey
+.sidebar__item
+    padding: 15px 1.563vw
+    border-bottom: 1px solid $grey
+.sidebar__item-header
+    display: flex
+    align-items: center
+    margin-bottom: 5px
+.sidebar__item-icon
+    width: 30px
+    min-width: 30px
+    height: 30px
+    border-radius: 50%
+    display: block
+    margin-right: 10px
+.sidebar-item__title
+    font-weight: 500
+.salary
+    font-weight: 700
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    margin-left: 25px
+.sidebar__item-text
+    font-size: 14px
+    font-weight: 300
+.sidebar__tag
+    font-size: 12px
+    font-weight: 600
+    background: $grey
+    display: inline-block
+    padding: 5.5px 15px
+    border-radius: 100px
+    margin-right: 5px
+    margin-top: 5px
+.sidebar__tag-list
+    display: flex
+    flex-wrap: wrap 
+    align-items: center
+.tag.tag--all 
+    background: $linear-dark
+    span 
+        color: #fff
+        -webkit-text-fill-color: #fff
+        text-fill-color: #fff
+.right-sidebar--light
+    .sidebar__tag 
+        background: $blue-gray
+//end content template
+
+//start footer style
+.footer
+    background: $gray-additional
+    border-top: 1px solid #616F86
+    padding-top: 52.5px
+    padding-bottom: 52.5px
+    .container-fluid 
+        max-width: 100%
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+.tag 
+    background: $blue-gray 
+    display: inline-block
+    padding: 5.5px 15px
+    border-radius: 100px
+    font-size: 12px
+    font-weight: 600
+    margin: 7.5px 7.5px
+    white-space: nowrap
+    span
+        background: $dark-background
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent  
+.footer--light
+    background: $dark-background
+
+//end footer style
+
+//start main content
+.main-content
+    width: 60.417vw
+.main-screen
+    display: flex
+    justify-content: space-between
+    padding-left: 5.208vw
+    padding-right: 4.427vw
+    padding-top: 95px
+    .h1 
+        max-width: 29.844vw
+.main-screen__img-wrapper
+    position: relative
+.main-screen__code
+    position: absolute
+    bottom: 0
+    left: 0
+    transform: translateX(-75%) translateY(7%)
+.main-screen__text
+    margin-bottom: 30px
+    font-weight: 300
+
+//end main-content
+
+@import "media"
+
+
+
