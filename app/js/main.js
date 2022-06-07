@@ -56,6 +56,33 @@ $(function(){
 
     //end tutorials slider
 
+     //start slider init
+     $('.news__slider').slick({
+        slidesToShow: 3,
+        prevArrow: false,
+        nextArrow: false,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    
+                }
+            }
+        ]
+      });
+    //end slider init
+
     //start star style
     $('.item-star').click(function(){
         $(this).toggleClass('active');
@@ -63,6 +90,15 @@ $(function(){
 
     //end start style
 
-    
+    $(function() {
+        $('.news__slider-item').matchHeight(
+            {
+                byRow: true,
+                property: 'height',
+                target: null,
+                remove: false
+            }
+        );
+    });
 
 });

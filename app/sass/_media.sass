@@ -13,6 +13,9 @@
 			height: 185px
 			width: 100%
 			object-fit: cover
+	.tags
+		.tag 
+			font-size: 0.75vw
 
 		
 	/* Large Devices, Wide Screens */
@@ -151,6 +154,9 @@
 		width: 15vw
 	.tutorials__slider-img-wrapper
 		width: 50%
+	.tags
+		.tag 
+			font-size: 12px
 
 
 
@@ -202,6 +208,18 @@
 	.tutorials__slider-content 
 		margin-left: 0 
 		width: 100%
+	.news
+		.container-fluid 
+			padding-left: 0 
+			padding-right: 0
+	.news .slick-slider .slick-track,
+	.news .slick-slider .slick-list
+		margin-left: -3.5vw
+	.news__slider-item 
+		padding: 0 2vw
+	.news__item-content
+		padding-left: 10px 
+		padding-right: 10px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 600px)
 	/**/
@@ -243,6 +261,9 @@
 		min-height: 178px
 	.slick-dots
 		margin-top: 15px
+	.news .slick-slider .slick-track,
+	.news .slick-slider .slick-list
+		margin-left: -5.5vw
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 400px)
@@ -250,17 +271,21 @@
 	.popular .slick-slider .slick-track,
 	.popular .slick-slider .slick-list
 		margin-left: -6vw
+
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 375px)
+@media only screen and (max-width : 376px)
 	/**/
 	.search-input
 		width: 38.667vw
 	.sign-up 
 		width: 24vw
+	.news .slick-slider .slick-track,
+	.news .slick-slider .slick-list
+		margin-left: -6.5vw
 	.popular .slick-slider .slick-track,
 	.popular .slick-slider .slick-list
 		margin-left: -7vw
-
+	
 
 /*==========  Mobile First  ==========*/
 
