@@ -15,6 +15,7 @@ a:hover
     font-size: 48px
     font-weight: 500
     font-family: $secondary-font
+    font-size: 2.5vw
     span 
         background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
         -webkit-background-clip: text
@@ -36,6 +37,16 @@ a:hover
     font-weight: 700
     font-size: 20px
     margin-bottom: 0
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #F8ECFF 45.17%, #DAE7FF 77.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent
+.h3--light
+    color: $black
+    -webkit-text-fill-color: $black
+    text-fill-color: $black
+
 .button 
     font-weight: 500
     background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
@@ -49,6 +60,18 @@ a:hover
     color: #fff
 .button:hover 
     color: $black
+.center 
+    text-align: center
+.section 
+    padding-top: 80px
+    padding-bottom: 100px
+    border-top: 1px solid #616F86
+.section--light  
+    border-top: 1px solid #E2E2EC
+.section    
+    .h1 
+        margin-bottom: 30px
+
 //end global style
 
 //start global style dark
@@ -316,9 +339,10 @@ a:hover
     padding-left: 2vw
     padding-right: 2vw
     padding-top: 95px
+    padding-bottom: 95px
     .h1 
         max-width: 29.844vw
-        font-size: 2.5vw
+        
         
 .main-screen__img-wrapper
     position: relative
@@ -343,6 +367,224 @@ a:hover
     transform: translateY(-50%) translateX(27%)
     width: 7.240vw
 //end main-content
+
+//start slick style
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-webkit-touch-callout: none
+	-khtml-user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+.slick-list
+	position: relative
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+.slick-list:focus
+	outline: none
+.slick-list.dragging
+	cursor: pointer
+	cursor: hand
+.slick-slider .slick-track,
+.slick-slider .slick-list
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+.slick-track
+	position: relative
+	top: 0
+	left: 0
+	display: block
+	margin-left: auto
+	margin-right: auto
+.slick-track:before,
+.slick-track:after
+	display: table
+	content: ''
+.slick-track:after
+	clear: both
+.slick-loading .slick-track
+	visibility: hidden
+.slick-slide
+	display: none
+	float: left
+	height: 100%
+	min-height: 1px
+[dir='rtl'] .slick-slide
+	float: right
+.slick-slide img
+	display: block
+.slick-slide.slick-loading img
+	display: none
+.slick-slide.dragging img
+	pointer-events: none
+.slick-initialized .slick-slide
+	display: block
+.slick-loading .slick-slide
+	visibility: hidden
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+.slick-arrow.slick-hidden
+	display: none
+//end slick style
+
+//start item style
+.item 
+    background: $gray-additional
+    border: 1px solid #616F86
+    border-radius: 10px
+    padding: 1.042vw
+    padding-bottom: 1.823vw
+    text-align: center
+.slider__item
+    padding: 8px 
+.item__img 
+    width: 100%
+.item-star
+    width: 24px
+    height: 24px
+    background: url('../img/icons/star.svg')
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    cursor: pointer
+.item-star.active 
+    background: url('../img/icons/starfill.svg')
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+.item__star-wrapper
+    display: flex
+    justify-content: flex-end
+    padding-bottom: 0.885vw
+.item__sub-title
+    font-size: 14px
+    line-height: 1.2
+    min-height: 72px
+    margin-top: 3px
+.item__title 
+    margin-bottom: 5px
+    min-height: 48px
+.item__text
+    font-size: 14px
+    font-weight: 300
+    margin-bottom: 10px
+.item__link 
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    font-weight: 500
+    position: relative
+.item__link:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 1px 
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    bottom: 0
+    left: 0
+.item__link--light
+    background: $linear-dark
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+.item__link--light:after 
+    background: $linear-dark
+.item--light 
+    background: rgba(255, 255, 255, 0.3)
+    border: 1px solid #E2E2EC; 
+.item-star--light
+    background: url('../img/icons/star-light.svg')
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+.item-star--light.active 
+    background: url('../img/icons/starfill-light.svg')
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+
+//start tutorials style
+.tutorials__slider
+    margin-top: 12px
+.tutorials__slider-item
+    padding: 1vw
+.tutorials__slider-item-wrapper
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+    min-height: 185px
+    border-radius: 10px
+    overflow: hidden
+.tutorials__slider-item-wrapper
+    display: flex
+    align-items: center
+.tutorials__slider-content 
+    margin-left: 2.865vw
+.tutorials__slider-title 
+    font-size: 32px
+    font-weight: 700
+    font-family: $secondary-font
+    color: #fff
+    margin-bottom: 10px
+    line-height: 1
+.tutorials__slider-text
+    font-weight: 300
+    margin-bottom: 15px
+.slick-dots
+    padding-left: 0
+    list-style: none
+    display: flex 
+    justify-content: center
+    margin-top: 25px
+    margin-bottom: 0
+    li 
+        margin: 0 2.5px
+        button 
+            font-size: 0
+            border: none
+            width: 10px 
+            height: 10px 
+            border-radius: 50%
+            padding: 0
+            background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+            opacity: 0.2
+            outline: none
+    li.slick-active 
+        button 
+            width: 15px 
+            height: 15px 
+            opacity: 0.6
+.tutorials__slider-item-wrapper--light
+    background: linear-gradient(99.92deg, #5C6E9F 8.23%, #B26FDF 48.78%, #669DD0 91.69%)
+.tutorials__slider-text--light 
+    color: #fff
+.tutorials.section--light 
+    .slick-dots 
+        li 
+            button
+                background: linear-gradient(99.92deg, #5C6E9F 8.23%, #B26FDF 48.78%, #669DD0 91.69%)
+                opacity: 0.2
+        li.slick-active 
+            button
+                background: linear-gradient(99.92deg, #5C6E9F 8.23%, #B26FDF 48.78%, #669DD0 91.69%)
+                opacity: 0.6
+
+
+//end tutorials style
 
 @import "media"
 
