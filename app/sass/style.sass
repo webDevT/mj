@@ -6,6 +6,7 @@ body
     font-size: 16px
     font-family: $main-font
     font-weight: 400
+ 
 a 
     text-decoration: none
 a:hover 
@@ -55,6 +56,10 @@ a:hover
     display: inline-block
     padding: 7.5px 40px
     color: $black
+    border: none 
+    outline: none
+.button:focus 
+    outline: none
 .button--light 
     background: $linear-dark
     color: #fff
@@ -209,6 +214,7 @@ a:hover
 .content-wrapper
     display: flex
     justify-content: space-between
+    overflow: hidden
     
 .left-sidebar--dark
     background: $gray-additional
@@ -640,6 +646,227 @@ a:hover
 
 
 //end news style
+
+//start cta style
+.cta 
+    padding-top: 126px
+.cta__content
+    padding-top: 80px 
+    padding-bottom: 100px
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+    border: 1px solid #616F86
+    text-align: center
+    position: relative
+    p
+        width: 550px
+        max-width: 100% 
+        margin: 0 auto
+        color: #fff
+    .h1 
+        margin-bottom: 25px
+        background: linear-gradient(97.58deg, #F5F5F5 15.26%, #F8ECFF 45.17%, #DAE7FF 77.86%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+.cta-left-buble
+    position: absolute 
+    top: 0
+    left: 0
+    transform: translateY(-33%) translateX(-38%)
+.cta-right-buble
+    position: absolute
+    top: 100%
+    right: 0
+    transform: translateY(-33%) translateX(30%)
+//end cta style 
+
+//start founder style
+.founder 
+    border-top: none
+    .container-fluid 
+        padding-left: 5.208vw
+        padding-right: 5.208vw
+.founder__text-wrapper
+    width: 624px
+    max-width: 70% 
+.founder__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+.faunder__name
+    font-size: 20px 
+    font-weight: 700 
+    font-family: $secondary-font
+    margin-top: 10px 
+    text-align: center
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+.faunder__name--light
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+//end founder style
+
+//start madal style
+.modal-window 
+    background: rgba(#270C41, 0.7)
+    position: fixed 
+    top: 0 
+    left: 0 
+    width: 100% 
+    height: 100%
+    z-index: 9999
+    overflow-y: auto
+    display: none
+.modal-contnet 
+    position: absolute 
+    left: 50% 
+    top: 50%
+    transform: translateX(-50%) translateY(-50%)
+    width: 623px 
+    max-width: 91.2vw
+    padding: 60px 116px 52px 116px
+    background: #270C41
+    border: 1px solid #616F86
+    border-radius: 25px
+    text-align: center
+    .h1 
+        margin-bottom: 35px
+.close-button 
+    position: absolute 
+    display: block 
+    cursor: pointer
+    top: 31px
+    right: 35px
+.input 
+    width: 100%
+    height: 40px 
+    background: rgba(15, 15, 55, 0.5)
+    border-radius: 100px
+    border: none
+    padding: 0 20px
+    color: $blue-gray
+    outline: none
+    font-weight: 300
+    
+.input::placeholder 
+    color: rgba($blue-gray, 0.5)
+    font-weight: 300
+.input:focus::placeholder 
+    color: transparent
+.input-wrapper
+    margin-bottom: 15px
+.password 
+    position: relative
+.password-control 
+    position: absolute 
+    top: 50% 
+    transform: translateY(-50%)
+    right: 20px
+    cursor: pointer
+    display: flex 
+    justify-content: center 
+    align-items: center
+    width: 17.28px 
+    height: 17.28px
+    img 
+        width: 17.28px 
+        height: 17.28px
+.input-wrapper--submit
+    .button 
+        margin-top: 10px   
+.form-btn
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent 
+    text-decoration: underline
+    position: relative 
+    cursor: pointer
+.form__row
+    opacity: 0.5
+    color: #616F86
+    margin-bottom: 15px
+ 
+
+.form-btn:after 
+    content: ''
+    width: 100% 
+    height: 0.5px 
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    position: absolute 
+    top: 100%
+    left: 0
+.modal-social__item 
+    margin: 0 11px
+.modal-window--login
+    .password 
+        margin-bottom: 0
+
+.or 
+    opacity: 0.5
+    color: #616F86
+    margin-bottom: 18px
+.or.white 
+    opacity: 1
+    color: #D7DFEB
+.forgot-password
+    text-align: left
+    display: block
+    padding-left: 22px
+    margin-bottom: 25px
+    opacity: 0.5
+    color: #616F86
+    cursor: pointer
+.forgot-password:hover 
+    opacity: 0.5
+    color: #616F86
+.button 
+    cursor: pointer
+.modal-window--reset-password
+    .h1 
+        margin-bottom: 10px
+.modal-contnet--light
+    background: #fff
+.input--light
+    background: rgba(215, 223, 235, 0.3)
+    color: $black
+    font-weight: 500
+.input--light::placeholder
+    background: linear-gradient(92.69deg, rgba(12, 37, 65, 0.3) 4.52%, rgba(49, 10, 73, 0.3) 49.16%, rgba(5, 41, 66, 0.3) 96.4%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+.input-wrapper--submit
+    .button--light 
+        color: #fff
+.form-btn--light
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+.form__row--light
+    opacity: 1
+    color: $blue-gray
+.form-btn--light:after 
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+.or--light
+    color: $blue-gray
+    opacity: 1
+.or.black 
+    color: #616F86
+    opacity: 1
+//end modal tyle
+
 
 @import "media"
 
