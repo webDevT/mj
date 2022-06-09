@@ -42,6 +42,41 @@ $(function(){
             }
         ]
       });
+
+      $('.slider2').slick({
+        slidesToShow: 3,
+        prevArrow: false,
+        nextArrow: false,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    
+                }
+            }
+        ]
+      });
+
+      
     //end slider init
 
     //start tutorials slider
@@ -81,6 +116,34 @@ $(function(){
             }
         ]
       });
+    //end slider init
+    if($(window).width() < 768) {
+     //start slider init
+     $('.articles__slider').slick({
+        slidesToShow: 3,
+        prevArrow: false,
+        nextArrow: false,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    
+                }
+            }
+        ]
+      });
+    }
     //end slider init
 
     //start star style
