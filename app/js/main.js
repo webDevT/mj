@@ -222,5 +222,21 @@ $(function(){
       });
     //end modul functions
 
+    //start path item
+
+      $('.path__item-header').click(function(){
+          $(this).parent().find('.path__item-content').slideToggle();
+          $(this).parent().toggleClass('active');
+      })
+
+      $('.got-it').click(function(){
+          $(this).parent().slideUp();
+          $(this).parent().parent().removeClass('active');
+          $(this).parent().parent().find('.check-icon').fadeIn();
+          $(this).parent().parent().find('.open-icon').addClass('no-active');
+      })
+    
+    //end path item 
+
 
 });

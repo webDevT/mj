@@ -348,6 +348,7 @@ a:hover
     padding-bottom: 95px
     .h1 
         max-width: 29.844vw
+        width: 29.844vw
         
         
 .main-screen__img-wrapper
@@ -362,6 +363,8 @@ a:hover
     margin-bottom: 30px
     font-weight: 300
     max-width: 470px
+    span 
+        font-weight: 500
 .main-screen__img
     width: 18.281vw
 .main-screen__code
@@ -650,6 +653,7 @@ a:hover
 //start cta style
 .cta 
     padding-top: 126px
+    padding-bottom: 160px
 .cta__content
     padding-top: 80px 
     padding-bottom: 100px
@@ -684,6 +688,7 @@ a:hover
 //start founder style
 .founder 
     border-top: none
+    padding-top: 50px
     .container-fluid 
         padding-left: 5.208vw
         padding-right: 5.208vw
@@ -890,6 +895,92 @@ a:hover
         max-width: 100%
         margin: 0 auto
 //end tage page style
+
+//start path style
+.path__item-header
+    display: flex 
+    justify-content: space-between
+    padding: 15px 27px 25px 25px
+    cursor: pointer
+.path__item
+   background: rgba(15, 15, 55, 0.5)
+   border: 1px solid #616F86 
+   margin-bottom: 10px
+.path__item-title
+    display: flex
+    align-items: flex-end
+.path__item-title
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    font-family: $secondary-font
+    font-weight: 700
+    line-height: 1
+    .path__item-num 
+        font-size: 32px
+        line-height: 1
+        min-width: 34px 
+        margin-right: 14px
+        background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+.path__item-content
+    padding-left: 25px 
+    padding-right: 27px
+    padding-bottom: 35px
+    padding-top: 5px
+    display: none
+    
+    .button 
+        margin-top: 20px
+    p 
+        font-weight: 300
+.path__item-content-title
+    font-weight: 500
+    margin-bottom: 19px
+    font-family: $secondary-font
+    color: $stroke
+.check-icon
+    margin-right: 12px 
+    display: none
+.path__right
+    display: flex 
+    align-items: center
+.open-icon 
+    transition: all 0.3s
+.path__item.active 
+    .open-icon 
+        transform: rotate(-180deg)
+.path__item--light
+    background: rgba(255, 255, 255, 0.3)
+    border: 1px solid #E2E2EC
+.open-icon.no-active 
+    opacity: 0.3
+.path__item-title--light
+    background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    .path__item-num 
+        background: linear-gradient(92.69deg, #295A92 4.52%, #9D55C9 49.16%, #0F73B7 96.4%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+.path__item-content-title--light
+    background: linear-gradient(92.69deg, #0C2541 4.52%, #310A49 49.16%, #052942 96.4%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+.button--light:hover 
+    color: #fff
+//end path style
 
 @import "media"
 
