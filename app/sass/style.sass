@@ -32,7 +32,29 @@ a:hover
         background-clip: text
         text-fill-color: transparent
         display: inline 
-
+        
+.h2 
+    color: #fff
+    font-size: 32px 
+    font-weight: 700
+    font-family: $secondary-font
+    margin-bottom: 30px
+    span 
+        background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        display: inline
+.h2--light 
+    color: $black
+    span
+        background: $linear-dark
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        display: inline   
 .h3 
     font-family: $secondary-font
     font-weight: 700
@@ -76,7 +98,10 @@ a:hover
 .section    
     .h1 
         margin-bottom: 30px
-
+.sub-title
+    font-weight: 500
+    font-family: $secondary-font
+    margin-bottom: 15px
 //end global style
 
 //start global style dark
@@ -642,11 +667,27 @@ a:hover
 .news__link
     display: block 
     margin-top: 10px
+    position: relative
+.news__link:after 
+    content: '' 
+    position: absolute 
+    width: 100% 
+    height: 1px 
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+    top: 100% 
+    left: 0
 .news__item-header
     display: flex 
     justify-content: space-between
     align-items: center
-
+.news__link.tab-style--light:after
+    content: '' 
+    position: absolute 
+    width: 100% 
+    height: 1px  
+    background: $linear-dark
+    top: 100% 
+    left: 0
 
 //end news style
 
@@ -981,6 +1022,37 @@ a:hover
 .button--light:hover 
     color: #fff
 //end path style
+
+//start vacancie style
+.main-screen__text--300
+    width: 331px 
+    max-width: 100%
+.main-screen__img-wrapper--vacancie
+    .main-screen__bubles
+        transform: translateX(30%) translateY(-80%)
+.job-description__item 
+    margin-bottom: 30px
+    p,
+    li 
+        font-weight: 300
+    li 
+        margin-bottom: 20px
+.job-description__footer 
+    display: flex 
+    justify-content: center
+.job-description
+    position: relative
+.job-description__icon
+    position: absolute 
+    top: 60px 
+    left: 0
+    transform: translateX(-60%)
+.job-description__icon2
+    position: absolute 
+    top: 50%
+    right: 0
+
+//end vacancie style
 
 @import "media"
 
