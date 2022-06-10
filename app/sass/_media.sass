@@ -37,6 +37,10 @@
 	.header__content 
 		width: auto
 		padding-right: 6.719vw
+	.tab 
+    	margin: 0 2.5px
+    	padding: 0 15px
+	
 	
 	/**/
 
@@ -186,6 +190,8 @@
 	.job-description__icon
 		left: 25px
 		top: 30px
+	.job-description__icon--v
+		top: 115px
 
 
 
@@ -214,6 +220,12 @@
 	.main-screen__bubles
 		width: 25vw
 	.main-screen__img-wrapper--vacancie
+		margin-left: auto 
+		margin-right: auto
+	.main-screen__img-wrapper--center
+		margin-left: auto 
+		margin-right: auto
+	.main-screen__img-wrapper--center
 		margin-left: auto 
 		margin-right: auto
 
@@ -301,6 +313,57 @@
 		top: 60%
 		right: -15px
 		opacity: 0.5
+	.vacancies-content
+		.row 
+			padding-left: 10.4vw 
+			padding-right: 10.4vw
+		.container-fluid 
+			padding-left: 4.267vw
+			padding-right: 4.267vw
+	.custom-select
+		margin-right: 0
+	.vacancie-search 
+		margin-right: 0
+	.vacancies-content__header
+		flex-wrap: wrap
+		.header__search 
+			width: 100%
+			margin-bottom: 9px
+			.search-input 
+				width: 100%
+	.selects-wrapper
+		width: 100% 
+		display: flex 
+		justify-content: space-between
+	.select-selected
+		padding-left: 10px
+		padding-right: 0
+	.select-selected:after 
+		right: 10px
+	.custom-select 
+		margin-left: 2.5px 
+		margin-right: 2.5px
+	.vacancies-content__header 
+		margin-bottom: 105px
+	.job-description__icon--v
+		top: 5px
+	.job-description__icon2--v
+		display: none
+	.tags .tag
+		padding: 5.5px 15px
+	.tabs
+		overflow-x: scroll
+		justify-content: flex-start
+		width: 100vw
+		padding-right: 20px
+	.tabs::-webkit-scrollbar
+  		width: 0
+	.article-content
+		.job-description__icon2--v
+			display: block
+			top: 95%
+
+
 
 
 /* Extra Small Devices, Phones */
@@ -403,6 +466,11 @@
 	.articles .slick-slider .slick-track,
 	.articles .slick-slider .slick-list
 		margin-left: -4.5vw
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px)
+	/**/	
+	.select-selected	
+		font-size: 11px
 	
 
 /*==========  Mobile First  ==========*/

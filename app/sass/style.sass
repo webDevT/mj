@@ -17,6 +17,7 @@ a:hover
     font-weight: 500
     font-family: $secondary-font
     font-size: 2.5vw
+    color: #fff
     span 
         background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
         -webkit-background-clip: text
@@ -25,6 +26,7 @@ a:hover
         text-fill-color: transparent
         display: inline
 .h1--light 
+    color: $black
     span
         background: $linear-dark
         -webkit-background-clip: text
@@ -145,7 +147,7 @@ a:hover
     border-radius: 100px
     text-decoration: none
 .search-input--light
-    background: rgba(215, 223, 235, 0.3)
+    background: url('../img/icons/search2.svg') no-repeat right 17.25px center, linear-gradient(0deg, rgba(215, 223, 235, 0.3), rgba(215, 223, 235, 0.3), rgba(215, 223, 235, 0.3))
     color: $black
 .search-input--light:placeholder
     color: rgba($stroke, .3)
@@ -633,7 +635,7 @@ a:hover
         height: 100% 
         width: 100% 
         object-fit: cover 
-        object-position: center
+        object-position: center top
         border-top-left-radius: 10px 
         border-top-right-radius: 10px
 .news__item-content
@@ -1051,8 +1053,136 @@ a:hover
     position: absolute 
     top: 50%
     right: 0
-
+.vacancies-content__header 
+    margin-bottom: 136px
 //end vacancie style
+
+//start select style
+/* The container must be positioned relative: */
+.custom-select
+    position: relative
+    margin-right: 15px
+.custom-select select
+    display: none
+.select-selected
+    background-color: $blue-gray
+    box-shadow: 5px 4px 10px rgba(189, 199, 210, 0.4)
+    border-radius: 100px
+.select-selected:after
+    position: absolute
+    content: url('../img/icons/down.svg')
+    top: 50%
+    right: 15px
+    transform: translateY(-50%)
+
+.select-items div
+    color: #ffffff
+    padding: 1.5px 15px
+    cursor: pointer
+    font-size: 12px
+    cursor: pointer
+    border-bottom: none
+    color: $black
+.select-selected
+    font-size: 14px
+    height: 29px
+    display: flex 
+    align-items: center
+    padding: 1.5px 15px
+    position:  relative 
+    z-index: 999
+    color: $black
+    font-weight: 600
+    cursor: pointer
+.select-items
+    position: absolute
+    background-color: rgba($blue-gray, .5)
+    top: 18px
+    left: 0
+    right: 0
+    z-index: 99
+    border-bottom-left-radius: 15px 
+    border-bottom-right-radius: 15px
+    padding-top: 15px
+    padding-bottom: 15px
+
+.select-hide
+    display: none
+//end select style
+
+//start vacancies header 
+.vacancies-content__header
+    display: flex 
+    align-items: center
+.vacancie-search
+    margin-right: 60px
+.job-description__icon--v
+    top: 110px 
+    opacity: 0.5
+.job-description__icon2--v 
+    right: -45px
+    opacity: 0.5
+    z-index: 0
+    top: 75%
+.selects-wrapper
+    display: flex
+.main-screen__text--light
+    color: #616F86
+//end vacancies header 
+
+//start articles style
+.tabs
+    display: flex 
+    justify-content: center
+    margin-bottom: 39px
+.tab 
+    background: #D7DFEB
+    margin: 0 7.5px
+    padding: 0 15px
+    color: $black
+    border-radius: 100px
+    cursor: pointer
+    font-weight: 600
+    font-size: 12px
+    height: 29px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    white-space: nowrap
+.tab.active 
+    background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+.tab__item 
+    display: none 
+.tab__item:first-child 
+    display: block
+.tab--light.active
+    background: $linear-dark
+    color: #fff
+//end articles style 
+
+//start article 
+.main-screen .h1--450
+    width: 25vw
+.main-screen__footer
+    display: flex 
+    align-items: center
+.article-star
+    margin-left: 20px
+.article-content
+    font-weight: 300
+.article-img
+    width: 100%
+    display: block 
+    margin-bottom: 25px
+    z-index: 1
+    position: relative
+.article-content
+    .job-description__icon2--v
+        top: 64%
+        z-index: 0
+    .job-description__icon--v
+        top: 0
+//end article 
 
 @import "media"
 
