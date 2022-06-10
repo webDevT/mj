@@ -192,6 +192,16 @@
 		top: 30px
 	.job-description__icon--v
 		top: 115px
+	.profile__photo
+		width: 312px 
+		height: 312px
+	.news-content__wrapper
+		flex-direction: column-reverse
+	.news-content__img
+		width: 100%
+		padding-right: 0
+		img
+			width: 100%
 
 
 
@@ -228,6 +238,12 @@
 	.main-screen__img-wrapper--center
 		margin-left: auto 
 		margin-right: auto
+	.main-screen--profile
+		flex-direction: row
+	.main-screen__img-wrapper 
+		margin-top: 0
+	.main-screen__img-wrapper--profile .main-screen__bubles
+		transform: translateY(-50%) translateX(33%)
 
 
 /* Small Devices, Tablets */
@@ -362,6 +378,42 @@
 		.job-description__icon2--v
 			display: block
 			top: 95%
+	.main-screen--profile
+		align-items: flex-end
+		position: relative
+		.h1 
+			white-space: nowrap
+			margin-bottom: 20px
+	.profile__photo
+		width: 33.067vw
+		height: 33.067vw
+		font-size: 12px
+	.main-screen--profile .main-screen__bubles
+		transform: translateY(-50%) translateX(30%)
+	.main-screen .profile__name
+		min-width: 30vw
+	.main-screen__img-wrapper--profile
+		position: absolute 
+		right: 8vw
+		bottom: 50px
+	.popular .slider.slider-center 
+		.slick-track
+			margin-left: 0 
+			margin-right: 0
+	.done--path
+		.job-description__icon2--v
+			top: 0
+			display: block
+	.news-page
+		.job-description__icon2--v
+			top: -100px
+			display: block
+			z-index: -1
+	.main-screen__img-wrapper--center
+		margin-top: 12px
+	
+	
+
 
 
 
@@ -441,6 +493,13 @@
 	.check-icon 
 		width: 22px 
 		height: 22px
+	.profile__photo
+		background: linear-gradient(97.58deg, #F5F5F5 15.26%, #DEBAF4 45.17%, #B0CAFC 77.86%)
+		border: 0.399399px solid #E2E2EC
+		color: $black
+	.profile__photo--light
+		background: $linear-dark
+		color: #fff
 	
 
 /* Custom, iPhone Retina */
@@ -449,6 +508,8 @@
 	.popular .slick-slider .slick-track,
 	.popular .slick-slider .slick-list
 		margin-left: -6vw
+	.main-screen .profile__name
+		min-width: 66vw
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 376px)
@@ -466,6 +527,8 @@
 	.articles .slick-slider .slick-track,
 	.articles .slick-slider .slick-list
 		margin-left: -4.5vw
+	.main-screen--profile .main-screen__text
+		max-width: 60vw
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 374px)
 	/**/	

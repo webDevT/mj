@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tutorial</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="//db.onlinewebfonts.com/c/f142568f1238b479112e6cedd35b776a?family=HighlandGothicFLF" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="dark">
+
+<!-- start header -->
+<header class="header">
+	<div class="header__container">
+		<div class="header__left">
+			<div class="menu__btn">
+				<div class="menu__row"></div>
+				<div class="menu__row"></div>
+				<div class="menu__row"></div>
+			</div>
+			<div class="header__search">
+			<input type="text" placeholder="Search" class="search-input">
+		</div>
+		</div>
+		
+
+		<div class="header__content">
+			<a href="tutorial-light.html" class="switch switch--dark">
+				<div class="switch__text">
+					Dark
+				</div>
+				<div class="switch__button"></div>				
+			</a>
+
+			<div class="header__buttons">
+				<div class="login">
+					Log in
+				</div>
+				<div class="sign-up">
+					Sign Up
+				</div>
+			</div>
+	
+		</div>
+	</div>
+</header>
+<!-- end header -->
+
+<!-- start content -->
+<div class="content-wrapper">
+	<div class="left-sidebar left-sidebar--dark">
+		<div class="sidebar__content">
+<h3 class="h3">
+			Navigation
+		</h3>
+
+		<div class="tags-list">
+			<a href="" class="tag">
+				<span>CSS</span>					
+			</a>
+			<a href="" class="tag">
+				<span>JavaScript</span>					
+			</a>
+	
+			<a href="" class="tag">
+				<span>React</span>					
+			</a>
+	
+			<a href="" class="tag">
+				<span>UX</span>					
+			</a>
+	
+			<a href="" class="tag">
+				<span>Vue</span>					
+			</a>
+	
+			<a href="" class="tag">
+				<span>Round-Ups</span>					
+			</a>
+	
+			<a href="" class="tag">
+				<span>Guides</span>					
+			</a>
+	
+			<a href="" class="tag">
+				<span>Career</span>					
+			</a>
+	
+			<a href="" class="tag">
+				<span>Privacy</span>					
+			</a>
+			<a href="" class="tag tag--all">
+				<span>Jump to all articles</span>					
+			</a>
+		</div>
+		</div>
+		
+	</div>
+
+	<!-- start main content -->
+	<div class="main-content">
+
+		<!-- start main-screen -->
+		<div class="main-screen">
+			<div class="main-screen__content">
+				<div class="tag">
+					<span>
+						Tutorial
+					</span>							
+				</div>
+
+				<div class="tag">
+					<span>
+						CSS
+					</span>							
+				</div>
+
+				<h1 class="h1">
+					<span>CSS Selectors </span>
+				</h1>
+				<div class="main-screen__text">
+					A CSS selector selects the HTML element(s) you want to style.
+					
+
+				</div>
+				
+				
+				<a href="" class="button">
+					Let`s make!
+				</a>
+			</div>
+			<div class="main-screen__img-wrapper main-screen__img-wrapper--center">
+				<img src="img/t.png" alt="" class="main-screen__img">
+				
+				<img src="img/bubles.svg" alt="" class="main-screen__bubles">
+			</div>
+		</div>
+		<!-- end main=screen -->
+
+		<!-- start tutorial content -->
+		<section class="section tutorial job-description">
+			<img src="img/code1.svg" alt="" class="job-description__icon job-description__icon--v">
+			<img src="img/code2.svg" alt="" class="job-description__icon2 job-description__icon2--v">
+
+			<div class="container-fluid">
+<p>
+				CSS selectors are used to "find" (or select) the HTML elements you want to style.
+			</p>
+
+			<p>
+				<span>
+					We can divide CSS selectors into five categories:
+
+				</span>
+			</p>
+
+			<ul>
+				<li>
+					Simple selectors (select elements based on name, id, class)				
+				</li>
+				<li>
+Combinator selectors (select elements based on a specific relationship between them)
+				</li>
+				<li>
+Pseudo-class selectors (select elements based on a certain state)
+				</li>
+				<li>
+Pseudo-elements selectors (select and style a part of an element)
+				</li>
+				<li>
+Attribute selectors (select elements based on an attribute or attribute value)
+				</li>
+			</ul>
+			<p>
+				This page will explain the most basic CSS selectors.
+			</p>
+
+			<div class="sub-title">
+				The CSS element Selector
+			</div>
+
+			<p>
+				The element selector selects HTML elements based on the element name.
+			</p>
+
+			<div class="css-code-wrapper">
+				p { <br>
+					&nbsp; <span class="rule">text-align:</span> <span class="css-value">center;</span>  <br>
+					&nbsp; <span class="rule">color:</span> <span class="css-value">red;</span> <br>
+				}
+			</div>
+
+			<div class="sub-title">
+				The CSS id Selector
+			</div>
+
+			<p>	
+				The CSS rule below will be applied to the HTML element with id="para1": </p>
+			<p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+			<p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+			<p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+
+
+			<div class="css-code-wrapper">
+				p { <br>
+					&nbsp; <span class="rule">text-align:</span> <span class="css-value">center;</span>  <br>
+					&nbsp; <span class="rule">color:</span> <span class="css-value">red;</span> <br>
+				}
+			</div>
+			</div>
+
+			
+		</section>
+
+		<!-- end tutorial content -->
+
+
+
+
+
+
+	</div>
+
+
+
+<!-- end main content -->
+
+	<div class="right-sidebar right-sidebar--dark">
+		<div class="sidebar__title-wrapper">
+			<h3 class="h3">
+				New vacancies
+			</h3>
+		</div>
+
+		<div class="sidebar__item">
+			<div class="sidebar__item-header">
+				<img src="img/icons/icon1.svg" alt="" class="sidebar__item-icon">
+				<div class="sidebar-item__title">
+					Senior mobile developer
+				</div>
+				<div class="salary">
+					$4540
+				</div>
+			</div>
+			<div class="sidebar__item-text">
+				in Dev studio
+			</div>
+			<div class="sidebar__tag-list">
+				<div class="sidebar__tag">
+				Remote
+			</div>
+			<div class="sidebar__tag">
+				5+ years ex.
+			</div>
+			</div>
+
+			
+		</div>
+
+		<div class="sidebar__item">
+			<div class="sidebar__item-header">
+				<img src="img/icons/icon2.svg" alt="" class="sidebar__item-icon">
+				<div class="sidebar-item__title">
+					Junior developer
+				</div>
+				<div class="salary">
+					$1000
+				</div>
+			</div>
+			<div class="sidebar__item-text">
+				in Mobilee studio
+			</div>
+			<div class="sidebar__tag-list">
+				<div class="sidebar__tag">
+					Office
+			</div>
+			<div class="sidebar__tag">
+				Kyiv
+			</div>
+			<div class="sidebar__tag">
+				1+ year ex.
+			</div>
+			</div>
+
+			
+		</div>
+
+		<div class="sidebar__item">
+			<div class="sidebar__item-header">
+				<img src="img/icons/icon3.svg" alt="" class="sidebar__item-icon">
+				<div class="sidebar-item__title">
+					Product manager
+				</div>
+				<div class="salary">
+					$3320
+				</div>
+			</div>
+			<div class="sidebar__item-text">
+				in Androidapp studio
+			</div>
+			<div class="sidebar__tag-list">
+				<div class="sidebar__tag">
+					Remote
+			</div>
+			<div class="sidebar__tag">
+				3+ years ex.
+			</div>
+			<div class="sidebar__tag">
+				Ukr. speaking only
+			</div>
+			</div>
+
+			
+		</div>
+
+		<div class="sidebar__item">
+			<div class="sidebar__item-header">
+				<img src="img/icons/icon1.svg" alt="" class="sidebar__item-icon">
+				<div class="sidebar-item__title">
+					UX testing needed
+				</div>
+				<div class="salary">
+					$560
+				</div>
+			</div>
+			<div class="sidebar__item-text">
+				in IOS
+			</div>
+			<div class="sidebar__tag-list">
+				<div class="sidebar__tag">
+					One-time job
+			</div>
+			<div class="sidebar__tag">
+				2+ years ex.
+			</div>
+			
+			</div>
+
+			
+		</div>
+
+		<div class="sidebar__item">
+			<div class="sidebar__item-header">
+				<img src="img/icons/icon2.svg" alt="" class="sidebar__item-icon">
+				<div class="sidebar-item__title">
+					Junior developer
+				</div>
+				<div class="salary">
+					$540
+				</div>
+			</div>
+			<div class="sidebar__item-text">
+				in Dev studio
+			</div>
+			<div class="sidebar__tag-list">
+				<div class="sidebar__tag">
+					Without ex.
+			</div>			
+			</div>			
+		</div>
+
+		<div class="sidebar__item">
+			<div class="sidebar__item-header">
+				<img src="img/icons/icon3.svg" alt="" class="sidebar__item-icon">
+				<div class="sidebar-item__title">
+					Senior mobile developer
+				</div>
+				<div class="salary">
+					$4540
+				</div>
+			</div>
+			<div class="sidebar__item-text">
+				in Dev studio
+			</div>
+			<div class="sidebar__tag-list">
+				<div class="sidebar__tag">
+					Remote
+			</div>	
+			<div class="sidebar__tag">
+				5+ years ex.
+		</div>		
+			</div>			
+		</div>
+
+	</div>
+			
+
+</div>
+<!-- end content -->
+
+
+
+<!-- start footer -->
+<footer class="footer">
+	<div class="container-fluid">
+
+		<a href="" class="tag">
+			<span>CSS</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>JavaScript</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>React</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>UX</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>Vue</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>Round-Ups</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>Guides</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>Career</span>					
+		</a>
+
+		<a href="" class="tag">
+			<span>Privacy</span>					
+		</a>
+
+	</div>
+</footer>
+<!-- end footer -->
+
+<!-- start sign up modal -->
+<div class="modal-window modal-window--sign-up">
+	<div class="modal-contnet">
+		<img src="img/icons/close.svg" alt="" class="close-button">
+		<h2 class="h1">
+			<span>Sign up</span>
+			
+		</h2>
+
+		<form action="" class="form">
+
+			<div class="input-wrapper">
+				<input type="text" class="input" placeholder="First name">
+			</div>
+
+			<div class="input-wrapper">
+				<input type="text" class="input" placeholder="Last name">
+			</div>
+
+			<div class="input-wrapper">
+				<input type="text" class="input" placeholder="E-mail">
+			</div>	
+			
+			<div class="password input-wrapper">
+				<input type="password" placeholder="Password" name="password" class="input password-input">
+				<a href="#" class="password-control"><img src="img/icons/password.svg" alt=""></a>
+			</div>
+
+			<div class="password input-wrapper">
+				<input type="password" placeholder="Duplicate your password" name="password" class="input password-input">
+				<a href="#" class="password-control"><img src="img/icons/password.svg" alt=""></a>
+			</div>
+
+			<div class="input-wrapper input-wrapper--submit">
+				<button type="submit" class="button">Create an account</button>
+			</div>
+
+			<div class="form__row">
+				Already have an account? <span class="form-btn login-btn">Log in</span>	
+			</div>
+
+			<div class="or">
+				Or sign up with
+			</div>
+
+			<div class="modal__social">
+				<a href="" class="modal-social__item">
+					<img src="img/icons/google.svg" alt="">
+				</a>
+				<a href="" class="modal-social__item">
+					<img src="img/icons/fb.svg" alt="">
+				</a>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- end sign up modal -->
+
+<!-- start login modal -->
+<div class="modal-window modal-window--login">
+	<div class="modal-contnet">
+		<img src="img/icons/close.svg" alt="" class="close-button">
+		<h2 class="h1">
+			<span>Log in</span>
+			
+		</h2>
+
+		<form action="" class="form">
+
+			<div class="input-wrapper">
+				<input type="text" class="input" placeholder="E-mail">
+			</div>
+				
+			<div class="password input-wrapper">
+				<input type="password" placeholder="Password" name="password" class="input password-input">
+				<a href="#" class="password-control"><img src="img/icons/password.svg" alt=""></a>
+			</div>
+			<div class="forgot-password">
+				Forgot your password?
+			</div>
+
+			<div class="input-wrapper input-wrapper--submit">
+				<button type="submit" class="button">Continue</button>
+			</div>
+			
+
+			<div class="form__row">
+				Don`t have an account? <span class="form-btn signup-btn">Sign up</span>	
+			</div>
+
+			<div class="or">
+				Or log in with
+			</div>
+
+			<div class="modal__social">
+				<a href="" class="modal-social__item">
+					<img src="img/icons/google.svg" alt="">
+				</a>
+				<a href="" class="modal-social__item">
+					<img src="img/icons/fb.svg" alt="">
+				</a>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- end login modal -->
+
+<!-- start forgot password modal -->
+<div class="modal-window modal-window--forgot-password">
+	<div class="modal-contnet">
+		<img src="img/icons/close.svg" alt="" class="close-button">
+		<h2 class="h1">
+			<span>Reset password</span>
+			
+		</h2>
+
+		<form action="" class="form">
+
+			<div class="input-wrapper">
+				<input type="text" class="input" placeholder="Enter your email">
+			</div>
+				
+
+			<div class="input-wrapper input-wrapper--submit">
+				<div class="button button-forgot-password">Continue</div>
+			</div>
+			
+
+			
+
+			<div class="or white">
+				Or sign up with
+			</div>
+
+			<div class="modal__social">
+				<a href="" class="modal-social__item">
+					<img src="img/icons/google.svg" alt="">
+				</a>
+				<a href="" class="modal-social__item">
+					<img src="img/icons/fb.svg" alt="">
+				</a>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- end forgot password modal -->
+
+<!-- start reset password modal -->
+<div class="modal-window modal-window--reset-password">
+	<div class="modal-contnet">
+		<img src="img/icons/close.svg" alt="" class="close-button">
+		<h2 class="h1">
+			<span>Reset password</span>
+			
+		</h2>
+
+		<form action="" class="form">
+		
+			<div class="or white">
+				Please check the link we sent into your e-mail
+			</div>
+
+		</form>
+	</div>
+</div>
+<!-- end reset password modal -->
+
+<!-- start reset password modal -->
+<div class="modal-window modal-window--reset-password2">
+	<div class="modal-contnet">
+		<img src="img/icons/close.svg" alt="" class="close-button">
+		<h2 class="h1">
+			<span>Reset password</span>
+			
+		</h2>
+
+		<form action="" class="form">
+
+			<div class="password input-wrapper">
+				<input type="password" placeholder="New password" name="password" class="input password-input">
+				<a href="#" class="password-control"><img src="img/icons/password.svg" alt=""></a>
+			</div>
+
+			<div class="password input-wrapper">
+				<input type="password" placeholder="Duplicate your password" name="password" class="input password-input">
+				<a href="#" class="password-control"><img src="img/icons/password.svg" alt=""></a>
+			</div>
+				
+
+			<div class="input-wrapper input-wrapper--submit">
+				<div class="button button-forgot-password">Continue</div>
+			</div>
+	
+		</form>
+	</div>
+</div>
+<!-- end reset password modal -->
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+ 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+
+
+	<script src="js/main.js"></script>
+</body>
+</html>
